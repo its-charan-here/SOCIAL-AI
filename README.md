@@ -64,12 +64,16 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+install `anaconda with python3` from https://www.anaconda.com/products/enterprise/
 
 ```bash
-dnf install wget
-wget http://www.example.com/install.sh
-bash install.sh
+# Tensorflow CPU
+conda env create -f conda-cpu-env.yml
+conda activate cpu-env
+
+# Tensorflow GPU
+conda env create -f conda-gpu-env.yml
+conda activate gpu-env
 ```
 
 ### Installing
