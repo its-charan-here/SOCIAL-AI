@@ -110,7 +110,7 @@ python detect_video.py --video test.mp4 --output test_result.mp4
 
 ## Live demo
 
-You can find a running system to test at [callforcode.mybluemix.net](http://callforcode.mybluemix.net/)
+We  have not uploaded the live demo of this project on any website yet !
 
 ## Built with
 
