@@ -108,16 +108,6 @@ Exectute the file `detect_video.py` script. This will execute the same social di
 python detect_video.py --video test.mp4 --output test_result.mp4
 ```
 
-### And coding style tests
-
-Explain what these tests test and why, if you chose `eslint` for example
-
-```bash
-npm install eslint --save-dev
-npx eslint --init
-npx eslint sample-file.js
-```
-
 ## Live demo
 
 You can find a running system to test at [callforcode.mybluemix.net](http://callforcode.mybluemix.net/)
@@ -141,9 +131,7 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/Code-and-Response/Project-Sample/graphs/contributors) who participated in this project.
+* **Poojan Panchal** - [PoojanPanchal](https://github.com/PoojanPanchal)
 
 ## License
 
@@ -151,4 +139,4 @@ This project is licensed under the Apache 2 License - see the [LICENSE](LICENSE)
 
 ## Acknowledgments
 
-* Based on [Billie Thompson's README template](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2).
+* Based on [The AI Guys](https://github.com/theAIGuysCode/Object-Detection-API).
