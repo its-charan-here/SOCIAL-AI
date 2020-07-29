@@ -62,9 +62,9 @@ It's imperative that learning and creating can continue when educational institu
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-### Prerequisites
+### Prerequisites and Installing
 
-install `anaconda with python3` from https://www.anaconda.com/products/enterprise/
+Install `anaconda with python3` from https://www.anaconda.com/products/enterprise/
 
 ```bash
 # Tensorflow CPU
@@ -91,41 +91,21 @@ Load the weights using `load_weights.py` script. This will convert the yolov3 we
 python load_weights.py
 ```
 
-### Installing
-
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be, for example
-
-```bash
-export TOKEN="fffd0923aa667c617a62f5A_fake_token754a2ad06cc9903543f1e85"
-export EMAIL="jane@example.com"
-dnf install npm
-node samplefile.js
-Server running at http://127.0.0.1:3000/
-```
-
-And repeat
-
-```bash
-curl localhost:3000
-Thanks for looking at Code-and-Response!
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
 ## Running the tests
 
 Explain how to run the automated tests for this system
 
-### Break down into end to end tests
+### Test with single image
 
-Explain what these tests test and why, if you were using something like `mocha` for instance
-
+Identify the social distancing among the people in an image by executing `detect_image.py` script. This will yield an output with an image consisting of the bounding boxes.
 ```bash
-npm install mocha --save-dev
-vi test/test.js
-./node_modules/mocha/bin/mocha
+python detect_image.py
+```
+### Test with a video 
+
+Exectute the file `detect_video.py` script. This will execute the same social distancing algorithms and give a live output on the screen . use the flag `--output` for saving the output file with your prefered name.
+```bash
+python detect_video.py --video test.mp4 --output test_result.mp4
 ```
 
 ### And coding style tests
