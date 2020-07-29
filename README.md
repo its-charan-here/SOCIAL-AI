@@ -27,7 +27,7 @@ A basic GitHub repository example for Call for Code submissions and those projec
 
 ### What's the problem?
 
-Part of the World Health Organization's guidance on limiting further spread of COVID-19 is to practice social distancing. As a result, schools in most affected areas are taking precautionary measures by closing their facilities. With school-aged children at home for an indeterminate amount of time,  keeping them engaged, entertained, and on top of their education is important.
+COVID-19 spreads from person to person even before the symptoms start. The best way to prevent the spread is maintaining a social distance of 6 feet among the individuals. But knowingly or unknowingly the people tend to defy the guidelines imposed by our government. Besides Manual supervision of people by authorities in public areas is both difficult and hazardous moreover there isn’t any practical solution in the market for Small and medium-sized enterprises, which leads to poor decision making during the pandemic.
 
 ### How can technology help?
 
@@ -35,7 +35,11 @@ Schools and teachers can continue to engage with their students through virtual 
 
 ### The idea
 
-It's imperative that learning and creating can continue when educational institutions have to shift the way they teach in times of crises, such as the COVID-19 pandemic. Providing a set of open source tools, backed by IBM Cloud and Watson Services, will enable educators to more easily make content available for their students.
+In order to solve these critical problems, we present u COVID101, A technological solution to tackle health precautionary measurements. An automated real-time social distancing and Face Mask detection among the people will not only make the job of the authorities more safe and easy but also remind the public to follow the required guidelines. This can enable effortless regulation among the people facilitating the small scale companies to recommence without compromising safety.
+
+With the Real-time graphical analysis of the situation in a given area like the average distance among the people, no of people not following social distancing, Social distancing Index. Will help us to understand the necessary steps that need to be taken in order to flatten the curve.
+
+This software is customizable to hardware components too. Social distancing detection is combined with drones for seamless surveillance in restricted areas.
 
 ## Demo video
 
