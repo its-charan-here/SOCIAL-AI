@@ -40,12 +40,11 @@ This software is customizable to hardware components too. Social distancing dete
 
 ## The architecture
 
-![Video transcription/translation app](https://developer.ibm.com/developer/tutorials/cfc-starter-kit-speech-to-text-app-example/images/cfc-covid19-remote-education-diagram-2.png)
+![Video transcription/translation app](https://github.com/its-charan-here/COVID101/blob/master/temp/arch.jpg)
 
-1. The user navigates to the site and uploads a video file.
-2. Watson Speech to Text processes the audio and extracts the text.
-3. Watson Translation (optionally) can translate the text to the desired language.
-4. The app stores the translated text as a document within Object Storage.
+1. The live footage from CCTV surveillance systems and Drones is used as an input.
+2. The footages will be processed in real-time on a cloud server having a GPU.
+3. The same algorithm is used for detecting face mask detection.
 
 ## Long description
 
