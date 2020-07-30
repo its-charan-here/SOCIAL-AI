@@ -94,28 +94,27 @@ You can download the yolov3 - Face Mask Detection weights by clicking [here](htt
 Load the weights using `load_weights_mask.py` script. This will convert the yolov3 weights into TensorFlow .ckpt model files!
 ```
 # yolov3
-python load_weights.py
+python load_weights_mask.py
 ```
-
 
 ## Running the tests
 
 Explain how to run the automated tests for this system
 
-### Test with single image
 
-Identify the social distancing among the people in an image by executing `detect_image.py` script. This will yield an output with an image consisting of the bounding boxes.
-```bash
-python detect_image.py --image img.png
-```
-### Test with a video 
+### Test with a video - Social Distancing
 
 Exectute the file `detect_video.py` script. This will execute the same social distancing algorithms and give a live output on the screen . use the flag `--output` for saving the output file with your prefered name.
 uncomment line number `277` to view the live graph outputs. 
 ```bash
 python detect_video.py --video test.mp4 --output test_result.mp4 --output_csv test_csv.csv
 ```
+### Test with a video - Face Mask Detection
 
+Identify the presence of Face Mask among the people in a video by executing `detect_video_mask.py` script. This will yield a live output on your screen.
+```bash
+python detect_video_mask.py --video test_mask.mp4 --output test_mask_output.mp4
+```
 
 ## Built with
 
