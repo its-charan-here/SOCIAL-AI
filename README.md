@@ -16,10 +16,7 @@ A basic GitHub repository example for Call for Code submissions and those projec
 1. [Running the tests](#running-the-tests)
 1. [Live demo](#live-demo)
 1. [Built with](#built-with)
-1. [Contributing](#contributing)
-1. [Versioning](#versioning)
 1. [Authors](#authors)
-1. [License](#license)
 1. [Acknowledgments](#acknowledgments)
 
 ## Short description
