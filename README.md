@@ -36,7 +36,7 @@ This software is customizable to hardware components too. Social distancing dete
 
 ## Demo video
 
-[![Watch the video](https://github.com/its-charan-here/COVID101/blob/master/temp/thumb.png)](https://youtu.be/8iOfzc6Wrqo)
+[![](https://raw.githubusercontent.com/its-charan-here/COVID101/master/temp/thumb.PNG?token=AKXUHA5SPL66LI36BJUHR3C7FPVEM)](https://youtu.be/8iOfzc6Wrqo)
 
 ## The architecture
 
