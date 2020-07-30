@@ -53,7 +53,7 @@ This software is customizable to hardware components too. Social distancing dete
 
 ## Project roadmap
 
-![Roadmap](https://github.com/its-charan-here/COVID101/tree/master/temp/roadmap.png)
+![example](https://github.com/its-charan-here/COVID101/blob/master/temp/roadmap.png)
 
 ## Getting started
 
