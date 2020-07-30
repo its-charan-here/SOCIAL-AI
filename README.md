@@ -49,7 +49,7 @@ This software is customizable to hardware components too. Social distancing dete
 
 ## Long description
 
-[More detail is available here](DESCRIPTION.md)
+[More detail is available here](https://docs.google.com/presentation/d/1LgQmfI-UdoYnCt_wXGfXAWPUgXm8-CXeJIdRPtDQv2Q/edit?usp=sharing)
 
 ## Project roadmap
 
