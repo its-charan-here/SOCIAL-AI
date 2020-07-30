@@ -101,6 +101,7 @@ python detect_image.py --image img.png
 ### Test with a video 
 
 Exectute the file `detect_video.py` script. This will execute the same social distancing algorithms and give a live output on the screen . use the flag `--output` for saving the output file with your prefered name.
+uncomment line number `277` to view the live graph outputs. 
 ```bash
 python detect_video.py --video test.mp4 --output test_result.mp4
 ```
