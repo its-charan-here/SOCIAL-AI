@@ -44,7 +44,7 @@ This software is customizable to hardware components too. Social distancing dete
 
 1. The live footage from CCTV surveillance systems and Drones is used as an input.
 2. The footages will be processed in real-time on a cloud server having a GPU.
-3. The same algorithm is used for detecting face mask detection.
+3. With the real time video processing, the data generated is stored in a separate csv file.
 
 ## Long description
 
