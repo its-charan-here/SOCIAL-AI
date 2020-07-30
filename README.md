@@ -105,9 +105,6 @@ Exectute the file `detect_video.py` script. This will execute the same social di
 python detect_video.py --video test.mp4 --output test_result.mp4
 ```
 
-## Live demo
-
-We  have not uploaded the live demo of this project on any website yet !
 
 ## Built with
 
