@@ -96,7 +96,7 @@ Explain how to run the automated tests for this system
 
 Identify the social distancing among the people in an image by executing `detect_image.py` script. This will yield an output with an image consisting of the bounding boxes.
 ```bash
-python detect_image.py
+python detect_image.py --image img.png
 ```
 ### Test with a video 
 
