@@ -49,9 +49,6 @@ def mid_point(img,person,idx,height,width):
     y_mid = int(y2)
     mid   = (x_mid,y_mid)
 
-    # _ = cv2.circle(img, mid, 5, (0, 0, 255), -1)
-    # cv2.putText(img, str(idx), mid, cv2.FONT_HERSHEY_SIMPLEX,1, (255, 255, 255), 2, cv2.LINE_AA)
-
     return mid
 
 
@@ -85,13 +82,9 @@ def change_2_red(img,person,p1,p2,height,width):
         y2 = int(y2*height)
         x1 = int(x1*width)
         x2 = int(x2*width)
-        # class_name = "Suspect!"
         color = (88, 43, 237)
         
-        # cv2.putText(img, 'Suspect!', (x1, y1-10), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0,0,255), 2)
         _ = cv2.rectangle(img, (x1, y1), (x2, y2), color, 2)  
-        # _=cv2.rectangle(img, (x1, y1-30), (x1+(len(class_name))*17, y1), color, -1)
-        # _=cv2.putText(img, class_name,(x1, y1-10),0, 0.75, (255,255,255),2)
             
     return img,len(risky)
 
@@ -115,7 +108,6 @@ def main(_argv):
 
     if len(physical_devices) > 0:
             tf.config.experimental.set_memory_growth(physical_devices[0], True)
-
 
     if FLAGS.tiny:
         yolo = YoloV3Tiny(classes=FLAGS.num_classes)
@@ -159,8 +151,6 @@ def main(_argv):
 
     df_tot = {"Frame no" : [],"Total People" : [], "SD Index" : [], "Not Following" : [], "Average Distance (Not Following)" : []}
 
-    # plt.style.use('fivethirtyeight')
-
     fig1 = plt.figure()
     ax1 = fig1.add_subplot(111)
     
@@ -181,7 +171,6 @@ def main(_argv):
 
         fig1.show()
         fig1.canvas.draw()
-        # fig1.savefig(str(FLAGS.video[:-4])+"_1.png")
         
         ax2.plot(x,y3,color='orange',linewidth=2,label='SD Index')
         ax2.set(xlabel='Frames', ylabel='SD Index %')
@@ -189,7 +178,6 @@ def main(_argv):
 
         fig2.show()
         fig2.canvas.draw()
-        # fig2.savefig(str(FLAGS.video[:-4])+"_2.png")
 
 
         ax3.plot(x,y4,color='brown',linewidth=2,label='SD Index')
@@ -197,15 +185,7 @@ def main(_argv):
         fig3.suptitle('Real Time\n Average Distance between Defaulters')
 
         fig3.show()
-        fig3.canvas.draw()
-        
-        # fig3.savefig(str(FLAGS.video[:-4])+"_3.png")
-        
-        # plt.savefig("1.png")
-
-        # ax1.set_xlim(left=max(0, fr-50), right=fr+50)  
-        # ax2.set_xlim(left=max(0, fr-50), right=fr+50)  
-        # ax3.set_xlim(left=max(0, fr-50), right=fr+50)        
+        fig3.canvas.draw()      
         
         time.sleep(0.1)
         plt.cla()
@@ -233,22 +213,12 @@ def main(_argv):
         boxes, scores, classes, nums = yolo.predict(img_in)
         fps  = ( fps + (1./(time.time()-t1)) ) / 2
         tot=0
-        # for i in range(nums[0]):
-        #     if(class_names[int(classes[0][i])]=='person'):
-        #         tot+=1
-                
         
         #identity only persons 
         ind = np.where(classes[0]==0)[0]
-        # print(type(ind))
-
-        # print("\n\nscores", scores)
-
         ind_score = np.where(scores[0]>0.50)[0]
-        # print(type(ind_score))
 
         ind = ind[np.in1d(ind,ind_score)]
-        # print("Ind", ind)
 
         
         tot = len(ind)
@@ -257,8 +227,6 @@ def main(_argv):
         #identify bounding box of only persons
         boxes1 =np.array(boxes) 
         person=boxes1[0][ind]
-        
-        # img = cv2.imread('img.png')
         
         midpoints = [mid_point(img,person,i,height,width) for i in range(tot)]
         heights_of_people = [height_dist(img,person,i,height,width) for i in range(tot)]
@@ -310,10 +278,6 @@ def main(_argv):
 
 
         fr+=1
-        # print("\n\nPersons : ",tot)
-        # print("Avg : ",avg)
-        # print("Faulty connections : ", len(p1))
-        # print("Frame No : ",fr)
         print(" Frame number :",fr)
         
 
@@ -326,7 +290,6 @@ def main(_argv):
 
         print("FPS: ",fps)
 
-        # img = draw_outputs(img, (boxes, scores, classes, nums), class_names)
         img=cv2.rectangle(overlay, (0, 0), (0+(len("Not following : 100"))*17, 110), (0,0,0), -1)
 
         img = cv2.putText(img, "Total People : {:.0f}".format(tot), (0, 30),
@@ -346,23 +309,19 @@ def main(_argv):
         
         out.write(output)
 
-        # imS = cv2.resize(output, (1920, 1080))
-        # cv2.imshow("output", output)
+        cv2.imshow("output", output)
         if cv2.waitKey(1) == ord('q'):
             break
     df_tot = pd.DataFrame(df_tot)
     print(df_tot)
     
-
-    # df_tot.to_csv(str(output_path[:-4])+".csv",index = False)
-    
     df_tot.to_csv(FLAGS.output_csv,index = False)
     
     
     vid.release()
-    # if output_path:
+    
     out.release()
-        # list_file.close()
+        
     cv2.destroyAllWindows()
 
 
