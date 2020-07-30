@@ -117,7 +117,10 @@ python detect_video_mask.py --video test_mask.mp4 --output test_mask_output.mp4
 
 ## Authors
 
-* **Poojan Panchal** - [PoojanPanchal](https://github.com/PoojanPanchal)
+* **Vignesh Charan** - [Vignesh](https://github.com/its-charan-here)
+* **Poojan Panchal** - [Poojan](https://github.com/PoojanPanchal)
+* **Kaushiv Agarwal** - [Kaushiv](https://github.com/kaushiv)
+
 
 ## License
 
