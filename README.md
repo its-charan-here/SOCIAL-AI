@@ -71,7 +71,7 @@ conda activate cpu-env
 conda env create -f conda-gpu-env.yml
 conda activate gpu-env
 ```
-#### Downloading official pretrained weights
+#### Downloading official pretrained weights of YOLOv3 - Social Distancing Detection
 For Linux: 
 ```
 # yolov3
@@ -86,6 +86,17 @@ Load the weights using `load_weights.py` script. This will convert the yolov3 we
 # yolov3
 python load_weights.py
 ```
+#### Downloading official pretrained weights of YOLOv3 - Face Mask Detection 
+
+You can download the yolov3 - Face Mask Detection weights by clicking [here](https://drive.google.com/drive/folders/1crqeQoxHkjwFJ89esmWcCtVDmEGmN-nn?usp=sharing) then save them to the weights_mask folder.
+
+#### Saving your yolov3 weights as a TensorFlow model.
+Load the weights using `load_weights_mask.py` script. This will convert the yolov3 weights into TensorFlow .ckpt model files!
+```
+# yolov3
+python load_weights.py
+```
+
 
 ## Running the tests
 
