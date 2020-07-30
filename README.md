@@ -72,12 +72,6 @@ conda env create -f conda-gpu-env.yml
 conda activate gpu-env
 ```
 #### Downloading official pretrained weights of YOLOv3 - Social Distancing Detection
-For Linux: 
-```
-# yolov3
-wget https://pjreddie.com/media/files/yolov3.weights -O weights/yolov3.weights
-```
-For Windows:
 You can download the yolov3 weights by clicking [here](https://pjreddie.com/media/files/yolov3.weights) then save them to the weights folder.
 
 #### Saving your yolov3 weights as a TensorFlow model.
