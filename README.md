@@ -82,7 +82,7 @@ python load_weights.py
 ```
 #### Downloading official pretrained weights of YOLOv3 - Face Mask Detection 
 
-You can download the yolov3 - Face Mask Detection weights by clicking [here](https://drive.google.com/drive/folders/1crqeQoxHkjwFJ89esmWcCtVDmEGmN-nn?usp=sharing) then save them to the weights_mask folder.
+You can download the yolov3 - Face Mask Detection weights by clicking [here](https://mega.nz/folder/z4t2AQzY#h-CGIehmUmQ04sL7bn7fkQ) then save them to the weights_mask folder.
 
 #### Saving your yolov3 weights as a TensorFlow model.
 Load the weights using `load_weights_mask.py` script. This will convert the yolov3 weights into TensorFlow .ckpt model files!
