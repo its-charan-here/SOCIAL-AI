@@ -34,7 +34,7 @@ With the Real-time graphical analysis of the situation in a given area like the 
 
 This software is customizable to hardware components too. Social distancing detection is combined with drones for seamless surveillance in restricted areas.
 
-## Demo video
+## Demo video |  <a href = "https://www.youtube.com/watch?v=kp_dmnhb3jU&t=1s&ab_channel=MITWorldPeaceUniversityMITWorldPeaceUniversity">YouTube</a>
 
 [![](https://raw.githubusercontent.com/its-charan-here/COVID101/master/temp/thumb.PNG?token=AKXUHA5SPL66LI36BJUHR3C7FPVEM)](https://youtu.be/8iOfzc6Wrqo)
 
